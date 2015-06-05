@@ -1,4 +1,5 @@
 #ifndef DEBUGUTILS
+	#define DEBUGUTILS
 	#ifdef DEBUG
 		#include <Arduino.h>
 		#ifndef DEBUGUTILS_DEV
