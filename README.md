@@ -17,15 +17,10 @@ All must be defined before the include.
 
  - DEBUG - Define it to activate debug; if not defined all debug code is removed
  - DEBUGUTILS_DEV - Define it to use a custom device.
- - DEBUGUTILS_SOFWARESERIAL - If DEBUGUTILS_DEV is not defined it tells debug library to use SoftwareSerial device
+ - DEBUGUTILS_SOFWARESERIAL - If DEBUGUTILS_DEV is not defined it tells debug library to use SoftwareSerial device. You must include <SoftwareSerial.h> in main program BEFORE including this library.
  - DEBUGUTILS_RX - When usking SoftwareSerial, it mermits you to specify RX pin (default: 10)
  - DEBUGUTILS_TX - When usking SoftwareSerial, it mermits you to specify TX pin (default: 11)
  - DEBUGUTILS_BAUDS - Set baud rate of device (default: 9600, very slow)
-
-				#ifndef SoftwareSerial_h
-					#error "You need to include SoftwareSerial in your project in order to use it: #include <SoftwareSerial.h>"
-				#endif
-
 
 
 ## Methods ##
@@ -43,7 +38,7 @@ DEBUG_PRINTLN2(A, B) - Equivalent to DEBUG_DEV.println(A, B)
 
 ## Usage ##
 
-{...}
+```
 #include <Arduino.h>
 
 // DebugUtils defines:
@@ -66,8 +61,7 @@ void setup() {
 
 void loop() {
 }
-{...}
-
+```
 
 
 ## Example ##
