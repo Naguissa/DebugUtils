@@ -29,8 +29,11 @@ All must be defined before the include.
 DebugUtilsInit() - Must be called on Setup, initialize device with baud rate
 
 DEBUG_PRINT(A) - Equivalent to DEBUG_DEV.print(A)
+
 DEBUG_PRINTLN(A) - Equivalent to DEBUG_DEV.println(A)
+
 DEBUG_PRINT2(A, B) - Equivalent to DEBUG_DEV.print(A, B)
+
 DEBUG_PRINTLN2(A, B) - Equivalent to DEBUG_DEV.println(A, B)
 
 
@@ -74,3 +77,4 @@ Included on example folder, available on Arduino IDE.
 
  * [Naguissa](https://github.com/Naguissa)
  * http://www.naguissa.com
+ * http://www.foroelectro.net
